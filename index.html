@@ -12,7 +12,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:600,800"; rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800"; rel="stylesheet" type="text/css">
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -21,15 +22,37 @@
 		<style>
 			body, html{
 				height: 100%;
-				margin-top: 30px;
 			}
 			
-			.bg{
+			#front-page-background{
 				background-image: url("developer.jpg");
 				height: 105%;
 				background-repeat: no-repeat;
 				background-position: center;
 				background-size: cover;
+			}
+			
+			.second-page-text-1{
+				margin-top: 50px;
+				margin-bottom: 50px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 35px;
+				font-weight: 700;
+			}
+			
+			.second-page-text-2{
+				margin-top: 40px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 25px;
+				font-weight: 500;
+			}
+			
+			.emoticon-size-adjust{
+				font-size: 25px;
+			}
+			
+			.second-page-text-2-line-spacing{
+				line-height: 2.1;
 			}
 			
 			.front-page-text{
@@ -39,7 +62,7 @@
 			}
 			
 			.front-profile-picture{
-				margin-top: 30px;
+				margin-top: 60px;
 				margin-bottom: 20px;
 			}
 
@@ -47,37 +70,61 @@
 				font-family: 'Montserrat', sans-serif;
 				font-size:35px;
 				font-weight: 600;
-				margin-left: 100px;
+				margin-left: 90px;
+				margin-top: 30px;
 			}
+			
+			
 		</style>
 		
 	</head>
 	
-	<body class="bg">
+	<body>
 	
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-12 text-white">
-					<h1 class="front-name">Eva Hiew Sook Yee</h1>
+		<div id="front-page-background">
+	
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 text-white">
+						<h1 class="front-name">Eva Hiew Sook Yee</h1>
+					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="container-fluid">
-			<div class="row justify-content-center align-items-center">
-				<div class="col-7 col-md-3 col-lg-2">					
-					<img src="profile_pic_4.jpg" class="img-fluid rounded-circle front-profile-picture" alt="Responsive Image" > 
+			
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-7 col-md-3 col-lg-2">					
+						<img src="profile_pic_4.jpg" class="img-fluid rounded-circle front-profile-picture" alt="Responsive Image" > 
+					</div>
+				</div>			
+			</div>
+			
+			<div class="container-fluid">
+				<div class="text-center text-white">
+					<h1 class="front-page-text">
+						STUDENT
+						<br/>
+						DEVELOPER
+					</h1>
 				</div>
-			</div>			
+			</div>
+		
 		</div>
 		
-		<div class="container-fuid">
-			<div class ="text-center text-large text-white">
-				<h1 class="front-page-text">
-					STUDENT
-					<br/>
-					DEVELOPER
-				</h1>
+		<div class="container-fluid second-page-text-1">
+			<div class="text-center">
+				<div class="row">
+					<div class="col-12 text-dark">
+						<h2 class="second-page-text-1">Hi! I'm Eva Hiew <i class="emoticon-size-adjust em em-wave"></i><i class="emoticon-size-adjust em em-smiley"></i></h2>
+						<p class="second-page-text-2 second-page-text-2-line-spacing">
+							I'm a final-year undergraduate at the Nanyang Technological University.
+							<br/>
+							I major in Electrical and Electronics Engineering, and specialise in Computer Engineering.
+							<br/>
+							I enjoy building/hacking anything with technology<i class="em em-female-technologist"></i>
+							</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		
